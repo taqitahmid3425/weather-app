@@ -1,0 +1,62 @@
+Create a modern dark-themed weather application UI mockup showing:
+
+LAYOUT & STRUCTURE:
+- Clean, minimalist interface with dark navy/charcoal background (#0f172a or #1a1a2e)
+- Responsive design showing both desktop (full width) and mobile (vertical stack) views side by side
+- Rounded corners (12-16px border-radius) throughout
+
+TOP SECTION - SEARCH BAR:
+- Dark input field with light border (gray-600 or subtle)
+- Placeholder text "Enter city or coordinates..."
+- Search button with accent color (blue-500 or cyan-400)
+- Positioned at top with padding
+
+CURRENT WEATHER SECTION:
+- Large card with semi-transparent glass effect (dark background with subtle border)
+- Large weather emoji/icon (3-4x size) - showing sun, cloud, rain, or snow
+- Large temperature display (e.g., "25°C") in white/light gray
+- Weather description below (e.g., "Partly Cloudy")
+- Secondary info in a row: Humidity (percentage), Wind Speed (km/h), Pressure
+- Icons for each metric (droplet for humidity, wind for speed, gauge for pressure)
+- Use accent colors for metrics (cyan, blue, or light purple)
+
+5-DAY FORECAST SECTION:
+- Grid of 5 forecast cards in a horizontal row
+- Each card shows:
+  - Day name (Mon, Tue, Wed, etc.) or date
+  - Weather icon/emoji (medium size)
+  - High temperature (e.g., "28°")
+  - Low temperature (e.g., "18°")
+  - Weather condition text (Small font)
+- Cards have hover effect (slight lift, brightness increase)
+- Cards are dark with subtle borders, spaced evenly
+- Background gradient or solid dark with subtle pattern
+
+COLOR SCHEME (Dark Theme):
+- Background: Dark navy/charcoal (#0f172a, #1a1a2e, or #111827)
+- Cards: Slightly lighter dark (#1e293b or #2d3748)
+- Text: White or light gray (#f1f5f9 or #e2e8f0)
+- Accent colors: Cyan (#06b6d4), Blue (#3b82f6), or Purple (#8b5cf6)
+- Borders: Subtle gray (#475569 or #64748b)
+- Weather-dependent: Vary card colors slightly (blue tint for rain, orange tint for clear sky, etc.)
+
+ADDITIONAL ELEMENTS:
+- Loading spinner (animated, subtle color)
+- Error message area (if applicable) with red accent
+- Optional: Background has very subtle gradient or pattern (not distracting)
+- Temperature unit toggle (°C / °F) in top-right corner if needed
+
+STYLING DETAILS:
+- All text is crisp and readable on dark background
+- Use Tailwind CSS design language
+- Consistent spacing and alignment
+- Professional weather app aesthetic (similar to Apple Weather, Dark Sky)
+- Icons/emojis are clearly visible and colorful against dark background
+
+MOBILE VIEW (shown on right side):
+- Single column layout
+- Full-width cards stacked vertically
+- Touch-friendly button sizes
+- Forecast cards scroll horizontally or stack in 2 columns
+
+Ensure the overall design feels premium, modern, and weather-appropriate with dark theme dominance.
