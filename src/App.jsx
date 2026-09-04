@@ -2,8 +2,10 @@
 // import weatherAPI from "./services/weatherAPI";
 // import { formatDate, formatTime } from './utils/formatters';
 
+import { useState, useEffect } from 'react'
 import CurrentWeather from "./components/CurrentWeather"
 import ForecastGrid from "./components/ForecastGrid"
+import weatherAPI from "./services/weatherAPI";
 
 // const App = () => {
 //     const [current, setCurrent] = useState(null)
@@ -51,18 +53,44 @@ import ForecastGrid from "./components/ForecastGrid"
 
 
 
-
-
-
-
-
-
-
 const App = () => {
+  const [current, setCurrent] = useState(null)
+  const [current_units, setCurrentUnits] = useState(null)
+  const [daily, setDaily] = useState(null)
+  const [daily_units, setDailyUnits] = useState(null)
+
+  useEffect(() => {
+    const fetchWeather = async () => {
+      const [curr, curr_units, dy, dy_units] = await weatherAPI()
+      setCurrent(curr)
+      setCurrentUnits(curr_units)
+      setDaily(dy)
+      setDailyUnits(dy_units)
+    }
+    fetchWeather()
+  }, [])
+
   return (
     <div className='text-(--text-primary) p-3.5'>
-        <CurrentWeather />
-        <ForecastGrid />
+      {current ? (
+        <>
+          <CurrentWeather
+            temp={current.temperature_2m}
+            humidity={current.relative_humidity_2m}
+            wind={current.wind_speed_10m}
+            weatherCode={current.weather_code}
+          />
+          
+          <ForecastGrid
+            maxTemp={daily.temperature_2m_max}
+            minTemp={daily.temperature_2m_min}
+            date={daily.time}
+            weatherCode={daily.weather_code}
+          />
+        </>
+      ) : (
+        <p>Loading weather...</p>
+      )}
     </div>
   )
 }

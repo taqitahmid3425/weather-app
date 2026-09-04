@@ -21,6 +21,14 @@ export function formatTime(isoString) {
     return formatted;
 }
 
-export function formatTemp(celsius) {
+export function formatTempC(celsius) {
     return `${celsius}° C`
+}
+
+export function formatTempF(farenheit) {
+    return `${farenheit}° C`
+}
+
+export function formatDay(isoString) {
+    return new Date(isoString).toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" });
 }
