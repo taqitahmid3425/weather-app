@@ -20,7 +20,14 @@ const CurrentWeather = ({
         <h3 className="text-xl">Current Weather</h3>
       </div>
 
-      <div className="weather-body flex flex-col items-center gap-4 border-2 border-(--border-subtle) rounded-xl p-3.5 bg-(--bg-card)">
+      <div
+        style={{
+          background: '#1E293B',
+          background:
+            'linear-gradient(315deg, rgba(30, 41, 59, 1) 0%, rgba(30, 41, 59, 1) 70%, rgba(153, 161, 175, 1) 100%)',
+        }}
+        className="weather-body flex flex-col items-center gap-4 border-2 border-(--border-subtle) rounded-xl p-3.5 bg-(--bg-card) bg-blue-300"
+      >
         <div className="temp-body flex items-center gap-3.5 p-3.5 rounded-xl">
           <WeatherIcon
             iconName={iconInfo.icon}

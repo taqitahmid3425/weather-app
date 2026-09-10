@@ -1,4 +1,4 @@
-import { formatDay, formatTempC } from '../utils/formatters';
+import { formatDay } from '../utils/formatters';
 import getWeatherInfo from '../utils/weatherCodes';
 import WeatherIcon from './WeatherIcon';
 
