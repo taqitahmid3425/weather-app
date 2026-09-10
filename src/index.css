@@ -2,36 +2,36 @@
 @import 'tailwindcss';
 
 :root {
-  /* Theme Colors */
-  --bg-primary: #0f172a; /* Dark navy background */
-  --bg-card: #1e293b; /* Lighter dark for cards */
+    /* Theme Colors */
+    --bg-primary: #0f172a; /* Dark navy background */
+    --bg-card: #1e293b; /* Lighter dark for cards */
 
-  /* Text & Content */
-  --text-primary: #f1f5f9; /* Main white text */
-  --text-secondary: #e2e8f0; /* Light gray text */
+    /* Text & Content */
+    --text-primary: #f1f5f9; /* Main white text */
+    --text-secondary: #e2e8f0; /* Light gray text */
 
-  /* Accent Colors */
-  --accent-cyan: #06b6d4; /* Primary accent */
-  --accent-blue: #3b82f6; /* Secondary accent */
-  --accent-purple: #8b5cf6; /* Tertiary accent */
+    /* Accent Colors */
+    --accent-cyan: #06b6d4; /* Primary accent */
+    --accent-blue: #3b82f6; /* Secondary accent */
+    --accent-purple: #8b5cf6; /* Tertiary accent */
 
-  /* Borders & Structure */
-  --border-subtle: #475569; /* Default border */
-  --border-muted: #64748b; /* Muted border */
+    /* Borders & Structure */
+    --border-subtle: #475569; /* Default border */
+    --border-muted: #64748b; /* Muted border */
 }
 
 body {
-  background-color: var(--bg-primary);
-  background-color: #99a1af.22;
-  width: 100vw;
-  height: 100vh;
-  font-family:
-    'Inter',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    sans-serif;
-  overflow-x: hidden;
+    background-color: var(--bg-primary);
+    background-color: #99a1af.22;
+    width: 100vw;
+    height: 100vh;
+    font-family:
+        'Inter',
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        sans-serif;
+    overflow-x: hidden;
 }

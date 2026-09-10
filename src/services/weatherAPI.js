@@ -49,7 +49,6 @@ export const getCoordinates = async (city) => {
             };
         }
         const location = data.results[0];
-        console.log(location);
         return {
             success: true,
             data: {
