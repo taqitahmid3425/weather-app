@@ -1,12 +1,12 @@
 # Weather App
 
-A responsive weather dashboard built with React and Tailwind CSS. Search for a city to view its current conditions and a five-day forecast in a clean, focused interface.
+A desktop-only weather dashboard built with React and Tailwind CSS. Search for a city to view its current conditions and a five-day forecast while practicing API integration.
 
 **Live demo:** [taqitahmid3425.github.io/weather-app](https://taqitahmid3425.github.io/weather-app)
 
 ## Overview
 
-This project is part of my portfolio and a practical showcase of building a weather experience with React. It uses the Open-Meteo APIs to convert a city search into geographic coordinates and retrieve weather data for that location.
+This project is part of my portfolio and a practical showcase of using APIs with React. It uses the Open-Meteo APIs to convert a city search into geographic coordinates and retrieve weather data for that location. The interface is designed for desktop screens and is not mobile-friendly.
 
 The dashboard includes:
 
@@ -14,7 +14,7 @@ The dashboard includes:
 - Current temperature, weather condition, wind speed, humidity, and atmospheric pressure
 - Five-day forecast with daily weather conditions and high and low temperatures
 - Loading and error states for the data-fetching flow
-- Responsive layout suitable for desktop and mobile screens
+- Desktop-focused layout for exploring the API-powered weather data
 
 ## Built With
 
